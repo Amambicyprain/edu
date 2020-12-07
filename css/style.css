@@ -3,27 +3,31 @@ header .container-fluid{
     background-color: #28ad98;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: soft-light;
+    background-blend-mode: multiply;
     padding-bottom: 0vh;
     color:#fff;
     
 }
 .bg{
     background-color: ;
-    box-shadow: 3px 3px 3px rgba(5, 82, 82, 0.815);
+    box-shadow: 2px 2px 2px 2px rgba(5, 82, 82, 0.815);
 }
 
 
 .styling-logo a {
     color:#fff;
-    text-shadow: 5px 5px 5px rgba(168, 224, 11, 0.815);
     font-weight: bolder;
     font-size: 30px;
 }
 a{
     color: #fff !important;
     font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(1, 16, 19, 0.815);
     text-align: right !important;
+    
+}
+a:hover{
+    border-bottom: 5px solid  rgba(1, 16, 19, 0.815); 
 }
 ul{
     padding-left: 25% !important;
@@ -31,3 +35,18 @@ ul{
 .push-text-down{
     padding-bottom: 30% !important;
 }
+.bg-blend{
+    background: url(images/image3.jep);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #28ad98;
+    background-blend-mode: multiply;
+}
+.bg-blend2{
+    background: url(images/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #28ad98;
+    background-blend-mode: multiply;
+}
+
