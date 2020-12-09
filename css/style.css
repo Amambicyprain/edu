@@ -45,7 +45,7 @@ ul{
     background-blend-mode: multiply;
 }
 .bg-blend2{
-    background: url(images/image1.jpg);
+    background: url(images/image2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #28ad98;

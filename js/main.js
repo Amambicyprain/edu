@@ -47,11 +47,11 @@ $( document ).ready(function() {
         ease:"power2.out" ,
      scrollTrigger:
      { 
-      trigger: ".animTriger",
-      markers: false, 
-      start:"top top+=5%",
-      end:"bottom top",
-      scrub:true
+        trigger: ".animTriger",
+        markers: false, 
+        start:"top top+=5%",
+        end:"bottom top",
+        scrub:true
     }
 })
     textUp.fromTo("#headingUP", 
@@ -78,17 +78,69 @@ $( document ).ready(function() {
         opacity:0
     }, 
     {
-      duration: 1,
-      y:0,
-      opacity:1,
-      ease:"power2.out",
-      scrollTrigger:
+        duration: 1,
+        y:0,
+        opacity:1,
+        ease:"power2.out",
+        scrollTrigger:
       { 
-       trigger: ".animTriger",
-       markers: false, 
-       start:"top top+=10%",
-       end:"bottom top",
-       scrub:true
+        trigger: ".animTriger",
+        markers: false, 
+        start:"top top+=10%",
+        end:"bottom top",
+        scrub:true
      }
     })
+    textUp.fromTo("#servicesUP", 
+    {
+        y:100,
+        opacity:0}, 
+        {
+          duration: 1, 
+          y:0,
+          opacity:1,
+          ease:"power2.out",
+          scrollTrigger:
+          { 
+           trigger: ".servicesUPTrigger",
+           markers: false, 
+           start:"top top+=20%",
+           end:"bottom top",
+           scrub:true
+         }
+        })
+        zoomIn.fromTo(".zoomedIn",
+    {
+         scale:0,
+         opacity:0
+    },
+      {
+        duration: 2,
+        scale:1,
+        opacity:1,
+        ease:"power2.out" ,
+        scrollTrigger:
+        { 
+            trigger: ".zoomedIn",
+            start:"top center",
+            end:"bottom top",
+            scrub:true}
+})
+zoomIn.fromTo(".zoomedIn2",
+{
+     scale:0,
+     opacity:0
+},
+  {
+    duration: 2,
+    scale:0.8,
+    opacity:1,
+    ease:"power2.out" ,
+    scrollTrigger:
+    { 
+        trigger: ".zoomedIn2",
+        start:"top center+=50%",
+        end:"bottom top",
+        scrub:true}
+})
 });
