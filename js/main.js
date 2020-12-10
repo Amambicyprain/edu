@@ -3,12 +3,13 @@ $( document ).ready(function() {
     gsap.registerPlugin(ScrollTrigger);
     const headerTextMove = gsap.timeline();
     const showcols = gsap.timeline();
-    const zoomIn = gsap.timeline({});
+    const zoomIn = gsap.timeline();
     const textUp = gsap.timeline();
     const showprogress = gsap.timeline();
     const flipup = gsap.timeline();
     const teamAnim = gsap.timeline();
     const teamAnim2 = gsap.timeline();
+    const pinNav = gsap.timeline();
     headerTextMove.fromTo("#headerText", {
         display:"none",
         x:-200,opacity:0}, 
@@ -16,7 +17,7 @@ $( document ).ready(function() {
             x:4, 
             opacity:1,
             display:"block",
-            ease:"power2.out"
+            ease:" BounceIn"
         });
     showcols.fromTo("#flipCols", 
         {
@@ -342,7 +343,7 @@ $( document ).ready(function() {
               start:"top center-=20",
               end:"bottom top",
               scrub:true,
-              markers:true
+             ease:"elastic"
             }
               
       })
